@@ -1,0 +1,25 @@
+{
+  "name": "svn-observer",
+  "version": "1.0.0",
+  "description": "watch svn repo and do something while updated.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinzhenyu-su/svn-observer.git"
+  },
+  "author": "yinzhenyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yinzhenyu-su/svn-observer/issues"
+  },
+  "homepage": "https://github.com/yinzhenyu-su/svn-observer#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
