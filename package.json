@@ -1,11 +1,8 @@
 {
   "name": "svn-observer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "watch svn repo and do something while updated.",
   "main": "./lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
