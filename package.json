@@ -2,7 +2,7 @@
   "name": "svn-observer",
   "version": "1.0.0",
   "description": "watch svn repo and do something while updated.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "directories": {
     "lib": "lib"
   },
