@@ -13,7 +13,7 @@ svn-observer 可以监听 svn 项目更新并执行自定义回调。
     ```
     此时程序会监听在 repos 中配置好的项目,如果有更新会向`notifyUrl` 发送 get 请求
     ![Bn6V58.png](https://s1.ax1x.com/2020/10/26/Bn6V58.png)]
-    你可以使用 ![pm2](https://pm2.io/) 自动运行该项目
+    你可以使用 [pm2](https://pm2.io/) 自动运行该项目
     ```cmd
     pm2 start ./lib/index.js --name svn-observer
     ```
