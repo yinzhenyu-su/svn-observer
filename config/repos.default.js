@@ -6,6 +6,6 @@ module.exports = [
     username: '', // 项目用户名，可以为空，配置后会覆盖全局 svn 用户名
     password: '', // 项目密码，可以为空，配置后会覆盖全局 svn 密码
     svn: 0, // svn 版本号
-    errorCount: 0,
+    errorCount: 0, // 监听报错计数
   },
 ];
