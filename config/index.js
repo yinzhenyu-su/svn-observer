@@ -1,6 +1,9 @@
 const config = {};
 const fs = require('fs');
 
+/**
+ * 配置文件加载器，请勿删除
+ */
 module.exports = new Promise((resolve, reject) => {
   fs.readdir(__dirname, { encoding: 'utf-8' }, (err, files) => {
     if (!err) {
