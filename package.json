@@ -35,5 +35,8 @@
     "@root": ".",
     "@config": "config",
     "@lib": "lib"
+  },
+  "engines": {
+    "node": "^8"
   }
 }

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 require('module-alias/register');
 const { program } = require('commander');
 const Observer = require('@lib/observer');
@@ -26,6 +28,8 @@ program
     } else if (cmd.reset === true) {
       ConfigPath.resetConfigPath();
       console.log(ConfigPath.getCurrentConfigPath());
+    } else {
+      console.log(cmd.help());
     }
   });
 
@@ -35,6 +39,8 @@ program
   .action(function (value, cmd) {
     if (cmd.observe) {
       new Observer();
+    } else {
+      console.log(cmd.help());
     }
   });
 
