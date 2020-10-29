@@ -2,7 +2,16 @@
   "name": "svn-observer",
   "version": "1.0.3",
   "description": "watch svn repo and do something while updated.",
-  "main": "./lib/index.js",
+  "main": "./bin/svn-observer.js",
+  "bin": {
+    "svn-observer": "./bin/svn-observer.js"
+  },
+  "keywords": [
+    "svn",
+    "svn hooks",
+    "svn observer",
+    "svn-observer"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +27,7 @@
   "homepage": "https://github.com/yinzhenyu-su/svn-observer#readme",
   "dependencies": {
     "axios": "^0.20.0",
+    "commander": "^6.2.0",
     "iconv-lite": "^0.6.2",
     "module-alias": "^2.2.2"
   },
@@ -25,5 +35,8 @@
     "@root": ".",
     "@config": "config",
     "@lib": "lib"
+  },
+  "engines": {
+    "node": "^8"
   }
 }
