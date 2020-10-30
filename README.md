@@ -4,19 +4,35 @@ svn-observer 可以监听 svn 项目更新并执行自定义回调。
 
 ## 使用方式
 
-1.  将项目克隆到你本地,然后打开根目录。
-2.  复制 `config` 文件夹下的文件并将其重命名为 `global.local.js`, `repos.local.js`,并修改其中的配置为你本地的配置。
-3.  执行 npm install 安装项目依赖
-4.  在控制台中执行如下命令
-    ```cmd
-    node lib
+1.  全局安装 npm 包
+    ```bash
+    npm install -g svn-observer
     ```
-    此时程序会监听在 repos 中配置好的项目,如果有更新会向`notifyUrl` 发送 get 请求
-    ![Bn6V58.png](https://s1.ax1x.com/2020/10/26/Bn6V58.png)
-    你可以使用 [pm2](https://pm2.io/) 自动运行该项目
-    ```cmd
-    pm2 start ./lib/index.js --name svn-observer
+2.  生成配置文件目录，目录地址可以为相对或绝对路径：
+    ```bash
+    svn-observer config -s yourConfigFolder
     ```
+    配置文件解析如下：
+    ```
+    yourConfigFolder
+    |
+    |  ecosystem.config.js   // pm2 配置文件, 无需更改
+    |  global.default.js     // 全局配置文件
+    |  index.js              // 配置文件加载脚本, 无需更改
+    |  repos.default.js      // svn 项目配置脚本
+    |
+    ```
+    生成完成后更改相关配置文件
+    配置文件解析
+3.  在配置文件目录中打开命令行执行
+    ```bash
+    pm2 start
+    ```
+    确认是否启动成功可以使用如下命令查看项目日志
+    ```bash
+    pm2 log svn-observer
+    ```
+    ![pm2 日志](https://s1.ax1x.com/2020/10/30/BYLLvt.png)
 
 ## 许可证
 
