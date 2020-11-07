@@ -47,6 +47,6 @@ svn-observer can monitor svn project updates and execute custom callbacks.
 
   1. add web panel.
 
-## 许可证
+## LICENSE
 
 [MIT](https://choosealicense.com/licenses/mit/)
