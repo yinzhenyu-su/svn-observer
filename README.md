@@ -47,6 +47,6 @@ svn-observer 可以监听 svn 项目更新并执行自定义回调。
 
   1. 添加 web 面板
 
-## 许可证
+## LICENSE
 
 [MIT](https://choosealicense.com/licenses/mit/)
