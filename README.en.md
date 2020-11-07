@@ -1,6 +1,6 @@
 # svn-observer
 
-svn-observer 可以监听 svn 项目更新并执行自定义回调。
+svn-observer can monitor svn project updates and execute custom callbacks.
 
 ## How to use
 
