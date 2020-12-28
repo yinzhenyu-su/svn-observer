@@ -1,3 +1,7 @@
+[中文](svn-observer)
+|
+[English](svn-observer/blob/main/README.en.md)
+
 # svn-observer
 
 svn-observer 可以监听 svn 项目更新并执行自定义回调。
