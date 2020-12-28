@@ -1,6 +1,6 @@
-[中文](svn-observer)
+[中文](https://github.com/yinzhenyu-su/svn-observer#readme)
 |
-[English](svn-observer/blob/main/README.en.md)
+[English](https://github.com/yinzhenyu-su/svn-observer/blob/main/README.en.md)
 
 # svn-observer
 

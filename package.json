@@ -1,6 +1,6 @@
 {
   "name": "svn-observer",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "watch svn repo and do something while updated.",
   "main": "./bin/svn-observer.js",
   "bin": {
