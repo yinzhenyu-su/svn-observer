@@ -1,4 +1,4 @@
-let { matchSVNInfoRev, matchSVNLogRev } = require('../lib/svn/getSVNRev');
+let { matchSVNInfoRev, matchSVNLogRev } = require('../lib/svn/svn-utils');
 let iconv = require('iconv-lite');
 let remote_utf8ChStr = `路径: .
 工作副本根目录: /root/xxxxx
